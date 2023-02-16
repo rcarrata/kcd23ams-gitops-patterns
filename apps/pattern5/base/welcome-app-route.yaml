@@ -1,0 +1,16 @@
+apiVersion: route.openshift.io/v1
+kind: Route
+metadata:
+  creationTimestamp: null
+  labels:
+    app: welcome-app
+  name: welcome-app
+  namespace: welcome-app
+spec:
+  host: ""
+  port:
+    targetPort: 8080
+  to:
+    kind: Service
+    name: welcome-app
+    weight: 100

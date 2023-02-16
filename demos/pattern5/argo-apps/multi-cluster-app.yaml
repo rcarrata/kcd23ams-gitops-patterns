@@ -1,0 +1,24 @@
+apiVersion: argoproj.io/v1alpha1
+kind: ApplicationSet
+metadata:
+  name: welcome-app-appset
+  namespace: argocd
+spec:
+  generators:
+    - clusters: {}
+  template:
+    metadata:
+      name: "{{name}}-welcome-app"
+    spec:
+      project: default
+      syncPolicy:
+        automated:
+          prune: true
+          selfHeal: true
+      source:
+        repoURL: https://github.com/RedHat-EMEA-SSA-Team/ns-apps
+        targetRevision: multicluster
+        path: cluster-generator/base/
+      destination:
+        server: "{{server}}"
+        namespace: welcome-app

@@ -1,6 +1,6 @@
 # Kubernetes Community Days Amsterdam 2023 - GitOps Patterns for managing cloud-native applications
 
-Repository for the KCD 2023 Amsterdam about GitOps Patterns for managing cloud-native  applications
+Repository for the KCD 2023 Amsterdam about GitOps Patterns for managing cloud-native applications
 
 ## Abstract
 
@@ -14,7 +14,11 @@ Using Syncwave, Hooks and ArgoCD Image Updater, we will present the advanced dep
 
 ## Demos
 
-Coming soon!
+* [Pattern 1 Demo - Kustomize to the rescue!](./demos/pattern1/README.md)
+* [Pattern 2 Demo - Controlling Order within GitOps deployments](./demos/pattern2/README.md)
+* [Pattern 3 Demo - The GitOps Order Awakens!](./demos/pattern3/README.md)
+* [Pattern 4 Demo - Managing GitOps Apps at scale](./demos/pattern4/README.md)
+* [Pattern 5 Demo - GitOps Cluster Deployment Strategies](./demos/pattern5/README.md)
 
 ## Contributors / Maintainers
 
