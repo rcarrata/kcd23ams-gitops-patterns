@@ -1,19 +1,19 @@
 apiVersion: argoproj.io/v1alpha1
 kind: Application
 metadata:
-  name: dev-env-todo
+  name: dev-env-httpbin-app
 spec:
   destination:
-    namespace: todo
+    namespace: httpbin
     server: https://kubernetes.default.svc
   project: apps-project
   source:
-    path: apps/todo
-    repoURL: https://github.com/RedHat-EMEA-SSA-Team/ns-apps
-    targetRevision: app-of-apps
+    path: demos/apps/pattern3/apps/httpbin-app
+    repoURL: https://github.com/rcarrata/kcd23ams-gitops-patterns
+    targetRevision: main
   syncPolicy:
     automated:
       prune: true
       selfHeal: true
     syncOptions:
-    - CreateNamespace=true
+      - CreateNamespace=true

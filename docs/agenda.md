@@ -10,6 +10,4 @@
 8. Demo Pattern 4
 9. Pattern 5 - MultiCluster Management - How to rule them all!
 10. Pattern 6 - Promotion Releases with GitOps without dying
-11. Demo / ShowCase Pattern 6
-12. Pattern 7 - Other tools (ArgoCD Image Updater / ArgoCD Rollouts)
 13. Wrap Up!

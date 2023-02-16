@@ -5,16 +5,16 @@ metadata:
   namespace: argocd
 spec:
   destination:
-    namespace: openshift-gitops
+    namespace: argocd
     server: https://kubernetes.default.svc
   project: default
   source:
-    path: components/
-    repoURL: https://github.com/RedHat-EMEA-SSA-Team/ns-gitops
+    path: demos/pattern3/components/
+    repoURL: https://github.com/rcarrata/kcd23ams-gitops-patterns
     targetRevision: app-of-apps
   syncPolicy:
     automated:
       prune: true
       selfHeal: false
     syncOptions:
-    - CreateNamespace=true
+      - CreateNamespace=true

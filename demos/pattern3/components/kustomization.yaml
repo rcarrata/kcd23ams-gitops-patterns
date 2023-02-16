@@ -2,7 +2,5 @@ apiVersion: kustomize.config.k8s.io/v1beta1
 kind: Kustomization
 
 resources:
-- bgdk.yaml
-- co.yaml
-- mesh-op.yaml
-- todo.yaml
+  - httpbin-app.yaml
+  - cluster-baseline.yaml

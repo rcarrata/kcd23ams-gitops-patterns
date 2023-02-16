@@ -10,15 +10,15 @@ spec:
     metadata:
       name: "{{name}}-welcome-app"
     spec:
-      project: default
+      project: welcome-app
       syncPolicy:
         automated:
           prune: true
           selfHeal: true
       source:
-        repoURL: https://github.com/RedHat-EMEA-SSA-Team/ns-apps
-        targetRevision: multicluster
-        path: cluster-generator/base/
+        repoURL: https://github.com/rcarrata/kcd23ams-gitops-patterns
+        targetRevision: main
+        path: demos/pattern5/base/
       destination:
         server: "{{server}}"
         namespace: welcome-app

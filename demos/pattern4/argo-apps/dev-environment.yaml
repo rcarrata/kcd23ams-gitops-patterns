@@ -1,20 +1,20 @@
 apiVersion: argoproj.io/v1alpha1
 kind: Application
 metadata:
-  name: todo-app
+  name: dev-env
   namespace: argocd
 spec:
   destination:
-    namespace: todo
+    namespace: argocd
     server: https://kubernetes.default.svc
-  project: default
+  project: appset-apps-project
   source:
-    path: apps/pattern2/todo
+    path: demos/pattern3/components/
     repoURL: https://github.com/rcarrata/kcd23ams-gitops-patterns
     targetRevision: main
   syncPolicy:
     automated:
       prune: true
-      selfHeal: true
+      selfHeal: false
     syncOptions:
       - CreateNamespace=true
