@@ -1,20 +1,20 @@
 apiVersion: argoproj.io/v1alpha1
 kind: ApplicationSet
 metadata:
-  name: dev-env-appset
+  name: dev-env-appset-project
   namespace: argocd
 spec:
   generators:
     - git:
         repoURL: https://github.com/rcarrata/kcd23ams-gitops-patterns
-        revision: appsets
+        revision: main
         directories:
           - path: apps/pattern4/dev-cluster/*
   template:
     metadata:
       name: "{{path.basename}}"
     spec:
-      project: dev-env-project
+      project: dev-env-appset-project
       syncPolicy:
         automated:
           prune: true
