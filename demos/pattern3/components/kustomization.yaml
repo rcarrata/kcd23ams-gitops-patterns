@@ -3,4 +3,6 @@ kind: Kustomization
 
 resources:
   - httpbin-app.yaml
-  - cluster-baseline.yaml
+  - dev-project001.yaml
+  - dev-project002.yaml
+  - dev-project003.yaml

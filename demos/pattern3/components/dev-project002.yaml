@@ -1,20 +1,19 @@
 apiVersion: argoproj.io/v1alpha1
 kind: Application
 metadata:
-  name: dev-env-app-of-apps
-  namespace: argocd
+  name: dev-env-httpbin
 spec:
   destination:
-    namespace: argocd
+    namespace: default
     server: https://kubernetes.default.svc
   project: dev-env-project
   source:
-    path: demo/pattern3/components/
+    path: demos/apps/pattern3/dev-cluster/project001
     repoURL: https://github.com/rcarrata/kcd23ams-gitops-patterns
     targetRevision: main
   syncPolicy:
     automated:
       prune: true
-      selfHeal: false
-    syncOptions:
-      - CreateNamespace=true
+      selfHeal: true
+    # syncOptions:
+    #   - CreateNamespace=true

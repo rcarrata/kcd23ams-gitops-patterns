@@ -6,9 +6,9 @@ spec:
   destination:
     namespace: default
     server: https://kubernetes.default.svc
-  project: apps-project
+  project: dev-env-project
   source:
-    path: demos/apps/pattern3/apps/cluster-baseline
+    path: demos/apps/pattern3/dev-cluster/project001
     repoURL: https://github.com/rcarrata/kcd23ams-gitops-patterns
     targetRevision: main
   syncPolicy:
