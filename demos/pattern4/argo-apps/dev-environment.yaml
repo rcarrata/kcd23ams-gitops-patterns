@@ -9,7 +9,8 @@ spec:
         repoURL: https://github.com/rcarrata/kcd23ams-gitops-patterns
         revision: main
         directories:
-          - path: apps/pattern4/dev-env/*
+          - path: apps/pattern4/dev-env/apps/*
+          - path: apps/pattern4/dev-env/namespaces/*
   template:
     metadata:
       name: "{{path.basename}}"
