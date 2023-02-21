@@ -37,9 +37,9 @@ kubectl config rename-context $(kubectl config current-context) cluster2
 * Change between both contexts to check if it's working:
 
 ```
-oc config use-context cluster1
+kubectl config use-context cluster1
 
-oc config use-context cluster2
+kubectl config use-context cluster2
 ```
 
 * Add the first cluster in the argocd server:
@@ -93,7 +93,7 @@ list of items found within the cluster secret.
 For delete the multicluster environment:
 
 ```
-oc delete applicationset -n openshift-gitops welcome-app-appset
+kubectl delete applicationset -n argo welcome-app-appset
 ```
 
 ## Links of interest

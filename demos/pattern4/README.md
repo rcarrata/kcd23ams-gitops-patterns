@@ -1,6 +1,6 @@
 # Pattern 4 - Managing GitOps Apps at scale
 
-## Deploy Dev Environment
+## Deploy Dev + Staging + Prod Environments
 
 ```
 kubectl apply -k deploy/

@@ -2,4 +2,3 @@ resources:
   - welcome-app-deployment.yaml
   - welcome-app-namespace.yaml
   - welcome-app-svc.yaml
-#- welcome-app-route.yaml
