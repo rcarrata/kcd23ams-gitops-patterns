@@ -22,13 +22,13 @@ apps/pattern6
     └── us
 ```
 
-## Scenario 1: Promote application version from Dev to Staging Environment in the US:
+## Scenario 1 - Promote application version from Dev to Staging Environment in the US:
 
 ```md
 cp envs/dev-gpu/version.yaml envs/staging-us/version.yaml
 ```
 
-## Scenario 1: Promote application version from Staging to Prod Environment in the US:
+## Scenario 2 - Promote application version from Staging to Prod Environment in the US:
 
 ```md
 cp envs/staging-us/version.yaml envs/prod-us/version.yaml
