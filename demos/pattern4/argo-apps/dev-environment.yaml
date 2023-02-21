@@ -2,7 +2,7 @@ apiVersion: argoproj.io/v1alpha1
 kind: ApplicationSet
 metadata:
   name: dev-env-appset
-  namespace: openshift-gitops
+  namespace: argocd
 spec:
   generators:
     - git:
