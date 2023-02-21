@@ -9,4 +9,3 @@ bases:
 resources:
   - namespace.yaml
   - rolebinding.yaml
-  - egress-policy.yaml
