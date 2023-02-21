@@ -9,7 +9,7 @@ spec:
     server: https://kubernetes.default.svc
   project: default
   source:
-    path: demos/pattern3/components/
+    path: demos/pattern3/dev-cluster/
     repoURL: https://github.com/rcarrata/kcd23ams-gitops-patterns
     targetRevision: app-of-apps
   syncPolicy:
