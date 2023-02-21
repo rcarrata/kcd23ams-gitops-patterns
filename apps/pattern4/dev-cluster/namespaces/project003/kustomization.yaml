@@ -4,9 +4,9 @@ kind: Kustomization
 namespace: project003
 
 bases:
-- ../baseline
+  - ../../baseline
 
 resources:
-- namespace.yaml
-- rolebinding.yaml
-- egress-policy.yaml
+  - namespace.yaml
+  - rolebinding.yaml
+  - egress-policy.yaml

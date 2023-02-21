@@ -4,7 +4,7 @@ kind: Kustomization
 namespace: project001
 
 bases:
-- ../baseline
+- ../../baseline
 
 patchesStrategicMerge:
 - storage-class-quota.yaml
