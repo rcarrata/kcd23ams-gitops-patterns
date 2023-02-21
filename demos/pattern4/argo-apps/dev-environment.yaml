@@ -1,20 +1,27 @@
 apiVersion: argoproj.io/v1alpha1
-kind: Application
+kind: ApplicationSet
 metadata:
   name: dev-env-appset
-  namespace: argocd
+  namespace: openshift-gitops
 spec:
-  destination:
-    namespace: argocd
-    server: https://kubernetes.default.svc
-  project: dev-env-project
-  source:
-    path: demos/pattern3/dev-cluster/
-    repoURL: https://github.com/rcarrata/kcd23ams-gitops-patterns
-    targetRevision: main
-  syncPolicy:
-    automated:
-      prune: true
-      selfHeal: true
-    syncOptions:
-      - CreateNamespace=true
+  generators:
+    - git:
+        repoURL: https://github.com/RedHat-EMEA-SSA-Team/ns-apps
+        revision: appsets
+        directories:
+          - path: pattern4/dev-cluster/
+  template:
+    metadata:
+      name: "{{path.basename}}"
+    spec:
+      project: dev-env-appset
+      syncPolicy:
+        automated:
+          prune: true
+          selfHeal: true
+      source:
+        repoURL: https://github.com/RedHat-EMEA-SSA-Team/ns-apps
+        targetRevision: main
+        path: "{{path}}"
+      destination:
+        server: https://kubernetes.default.svc
