@@ -14,7 +14,7 @@ spec:
     metadata:
       name: "{{path.basename}}"
     spec:
-      project: dev-env-appset
+      project: dev-env-project
       syncPolicy:
         automated:
           prune: true
