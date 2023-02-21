@@ -26,7 +26,7 @@ You can read more about ApplicationSets from the [ApplicationSets documentation 
 Just delete the application set and the ArgoCD ApplicationSet contoller will do the magic!
 
 ```
-kubectl delete applicationset --all -n openshift-gitops
+kubectl delete applicationset --all -n argocd
 ```
 
 ## Links of interest
