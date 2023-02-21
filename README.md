@@ -19,6 +19,7 @@ Using Syncwave, Hooks and ArgoCD Image Updater, we will present the advanced dep
 * [Pattern 3 Demo - The GitOps Order Awakens!](./demos/pattern3/README.md)
 * [Pattern 4 Demo - Managing GitOps Apps at scale](./demos/pattern4/README.md)
 * [Pattern 5 Demo - GitOps Cluster Deployment Strategies](./demos/pattern5/README.md)
+* [Pattern 6 Demo - Promotion between GitOps environments](./demos/pattern6/README.md)
 
 ## Contributors / Maintainers
 
