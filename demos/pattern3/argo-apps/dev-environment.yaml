@@ -11,7 +11,7 @@ spec:
   source:
     path: demos/pattern3/dev-cluster/
     repoURL: https://github.com/rcarrata/kcd23ams-gitops-patterns
-    targetRevision: app-of-apps
+    targetRevision: main
   syncPolicy:
     automated:
       prune: true
