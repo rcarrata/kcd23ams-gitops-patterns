@@ -1,7 +1,7 @@
 apiVersion: argoproj.io/v1alpha1
 kind: Application
 metadata:
-  name: dev-env-httpbin
+  name: dev-env-project003
 spec:
   destination:
     namespace: default
