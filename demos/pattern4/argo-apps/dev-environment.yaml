@@ -6,7 +6,7 @@ metadata:
 spec:
   generators:
     - git:
-        repoURL: https://github.com/RedHat-EMEA-SSA-Team/ns-apps
+        repoURL: https://github.com/rcarrata/kcd23ams-gitops-patterns
         revision: appsets
         directories:
           - path: pattern4/dev-cluster/
@@ -20,7 +20,7 @@ spec:
           prune: true
           selfHeal: true
       source:
-        repoURL: https://github.com/RedHat-EMEA-SSA-Team/ns-apps
+        repoURL: https://github.com/rcarrata/kcd23ams-gitops-patterns
         targetRevision: main
         path: "{{path}}"
       destination:
