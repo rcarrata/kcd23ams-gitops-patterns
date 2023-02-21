@@ -4,7 +4,7 @@ kind: Kustomization
 namespace: project004
 
 bases:
-- ../baseline
+- ../../baseline
 
 resources:
 - namespace.yaml

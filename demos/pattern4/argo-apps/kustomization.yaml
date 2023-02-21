@@ -3,5 +3,5 @@ kind: Kustomization
 
 resources:
   - dev-environment.yaml
-  - prod-environment.yaml
-  - staging-environment.yaml
+  # - prod-environment.yaml
+  # - staging-environment.yaml
