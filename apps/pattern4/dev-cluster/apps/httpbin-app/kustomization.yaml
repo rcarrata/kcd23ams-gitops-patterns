@@ -7,3 +7,4 @@ resources:
   - httpbin-deploy.yaml
   - httpbin-sa.yaml
   - httpbin-svc.yaml
+  - httpbin-ns.yaml
