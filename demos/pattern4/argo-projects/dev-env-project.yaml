@@ -1,7 +1,7 @@
 apiVersion: argoproj.io/v1alpha1
 kind: AppProject
 metadata:
-  name: appset-apps-project
+  name: dev-env-project
 spec:
   clusterResourceWhitelist:
     - group: "*"

@@ -17,10 +17,10 @@ You can create an app that creates other apps, which in turn can create other ap
 To delete the app of apps pattern, the deletion finalizer needs to be applied to each child of the app of apps, because needs to have this in order to achieve the [delete in cascade](https://argoproj.github.io/argo-cd/user-guide/app_deletion/#about-the-deletion-finalizer)
 
 ```
-for i in $(oc get applications -n openshift-gitops | awk '{print $1}' | grep -v NAME); do kubectl patch app $i -n openshift-gitops -p '{"metadata": {"finalizers": ["resources-finalizer.argocd.argoproj.io"]}}' --type merge; done
+for i in $(kubectl get applications -n argocd | awk '{print $1}' | grep -v NAME); do kubectl patch app $i -n argocd -p '{"metadata": {"finalizers": ["resources-finalizer.argocd.argoproj.io"]}}' --type merge; done
 ```
 
 ```
-kubectl delete app dev-env -n openshift-gitops
+kubectl delete app dev-env-app-of-apps -n argocd
 ```
 
