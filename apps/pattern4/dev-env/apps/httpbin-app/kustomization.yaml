@@ -3,6 +3,8 @@ kind: Kustomization
 
 namespace: httpbin
 
+namePrefix: dev-
+
 resources:
   - httpbin-deploy.yaml
   - httpbin-sa.yaml

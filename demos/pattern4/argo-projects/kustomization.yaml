@@ -3,3 +3,5 @@ kind: Kustomization
 
 resources:
   - dev-env-project.yaml
+  - staging-env-project.yaml
+  - prod-env-project.yaml
