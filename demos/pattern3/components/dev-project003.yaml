@@ -8,7 +8,7 @@ spec:
     server: https://kubernetes.default.svc
   project: dev-env-project
   source:
-    path: demos/apps/pattern3/dev-cluster/project001
+    path: apps/pattern3/dev-cluster/namespaces/project002
     repoURL: https://github.com/rcarrata/kcd23ams-gitops-patterns
     targetRevision: main
   syncPolicy:
