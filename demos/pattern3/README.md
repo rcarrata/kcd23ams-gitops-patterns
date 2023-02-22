@@ -1,9 +1,9 @@
-# Pattern 3 Demo - The GitOps Order Awakens!
+# Pattern 3 Demo - The GitOps Order Awakens!
 
 ## Deploy Dev Environment
 
 ```
-kubectl apply -k deploy.yaml
+kubectl apply -k deploy/
 ```
 
 ## Argo App of Apps Pattern
