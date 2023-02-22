@@ -22,5 +22,8 @@ kubectl apply -f bgdk-app.yaml
 * To delete all the objects generated in the bgd application use:
 
 ```
-kubectl patch app bgd-app -n openshift-gitops -p '{"metadata": {"finalizers": ["resources-finalizer.argocd.argoproj.io"]}}' --type merge
+kubectl patch app bgdk-app -n argocd -p '{"metadata": {"finalizers": ["resources-finalizer.argocd.argoproj.io"]}}' --type merge
+
+kubectl delete app -n argocd bgdk-app
 ```
+
