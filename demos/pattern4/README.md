@@ -3,7 +3,7 @@
 # Pattern 4 - Managing GitOps Apps at scale
 
 
-## Deploy Dev + Staging + Prod Environments
+## Deploy Dev + Staging + Prod Environments with a SINGLE ArgoCD ApplicationSet
 
 ```
 kubectl apply -k deploy/
