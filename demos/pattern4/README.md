@@ -1,4 +1,7 @@
-# Pattern 4 - Managing GitOps Apps at scale
+# 
+
+# Pattern 4 - Managing GitOps Apps at scale
+
 
 ## Deploy Dev + Staging + Prod Environments
 
