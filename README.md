@@ -23,7 +23,7 @@ Using Syncwave, Hooks and ArgoCD Image Updater, we will present the advanced dep
 
 ## Live Demos Video
 
-* [GitOps Patterns Video](https://www.youtube.com/playlist?list=PLKXNoUxsG626IDRP-9r18FnOrgnukeEW4)
+* [GitOps Patterns Demo Playlist](https://www.youtube.com/playlist?list=PLKXNoUxsG626IDRP-9r18FnOrgnukeEW4)
 
 ## Contributors / Maintainers
 
