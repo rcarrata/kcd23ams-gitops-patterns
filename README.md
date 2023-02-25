@@ -21,7 +21,11 @@ Using Syncwave, Hooks and ArgoCD Image Updater, we will present the advanced dep
 * [Pattern 5 Demo - GitOps Cluster Deployment Strategies](./demos/pattern5/README.md)
 * [Pattern 6 Demo - Promotion between GitOps environments](./demos/pattern6/README.md)
 
+## Live Demos Video
+
+* [GitOps Patterns Video](https://www.youtube.com/playlist?list=PLKXNoUxsG626IDRP-9r18FnOrgnukeEW4)
+
 ## Contributors / Maintainers
 
-* [German Montalvo](github.com/gmontalvoy)
 * [Roberto Carratalá](github.com/rcarrata)
+* [German Montalvo](github.com/gmontalvoy)
